@@ -15,7 +15,7 @@ sentiment_analyzer_url = os.getenv(
 # Add code for get requests to back end
 
 def get_request(endpoint, **kwargs):
-    
+
     params = ""
     if (kwargs):
         for key, value in kwargs.items():
@@ -33,7 +33,7 @@ def get_request(endpoint, **kwargs):
         print("Network exception occurred")
 
 def analyze_review_sentiments(text):
-    
+ 
     request_url = sentiment_analyzer_url+"/analyze/"+text
     print("GET from {} ".format(request_url))
     try:
@@ -47,7 +47,7 @@ def analyze_review_sentiments(text):
 # def post_review(data_dict):
 
 def post_review(data_dict):
-    
+
     request_url = backend_url+"/insert_review"
     try:
         response = requests.post(request_url, json=data_dict)
