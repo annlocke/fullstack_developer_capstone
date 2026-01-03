@@ -3,6 +3,18 @@ p{
     font-size:12.0pt; color:#BE2D0F;
 }
 
+p2{
+    font-family:'Myriad Pro','sans-serif';
+    font-size:10.0pt; color:blue;
+    text-align: center
+}
+
+p3{
+    font-family:'Myriad Pro','sans-serif';
+    font-size:12.0pt; color:#BE2D0F;
+    text-align: center
+}
+
 
 img{
   width: 60%;
